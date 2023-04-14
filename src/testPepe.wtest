@@ -13,3 +13,15 @@ describe "test pepe" {
 		assert.equals(pepe.sueldo(), 15080)
 	}
 }
+
+describe "test pepe" {
+	method initialize() {
+		pepe.setCategoria(gerente)
+		pepe.setBonoResultado(bonoPorcentaje)
+		pepe.setBonoPresentismo(bonoNulo)
+		pepe.setFaltas(3)
+	}
+	test "sueldo pepe 11000" {
+		assert.equals(pepe.sueldo(), 11000)
+	}
+}
