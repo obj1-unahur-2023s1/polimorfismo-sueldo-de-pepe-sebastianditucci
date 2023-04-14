@@ -1,0 +1,15 @@
+import pepe.*
+import categorias.*
+import bonos.*
+
+describe "test pepe" {
+	method initialize() {
+		pepe.setCategoria(cadete)
+		pepe.setBonoResultado(bonoFijo)
+		pepe.setBonoPresentismo(bonoDependeFaltas)
+		pepe.setFaltas(3)
+	}
+	test "sueldo pepe 15080" {
+		assert.equals(pepe.sueldo(), 15080)
+	}
+}
